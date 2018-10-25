@@ -71,7 +71,7 @@
                     </execution>
 
                     <!-- Generate JavaDoc files using Ant during "package" phase -->
-                    <execution>
+                    <!--<execution>
                         <id>gen-javadocs</id>
                         <phase>verify</phase>
                         <configuration>
@@ -82,7 +82,7 @@
                         <goals>
                             <goal>run</goal>
                         </goals>
-                    </execution>
+                    </execution>-->
 
                 </executions>
 
