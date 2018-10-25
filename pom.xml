@@ -75,7 +75,7 @@
         <module>core</module>
         <module>ace</module>
         <module>compat</module>
-        <module>samples</module>
+        
     </modules>
 
     <properties>
