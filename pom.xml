@@ -72,7 +72,6 @@
     </scm>
 
     <modules>
-        <module>icepush</module>
         <module>core</module>
         <module>ace</module>
         <module>compat</module>
