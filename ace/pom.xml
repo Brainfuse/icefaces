@@ -73,9 +73,10 @@
                     </execution>
 
                     <!-- Generate JavaDoc files using Ant during "package" phase -->
-                    <execution>
+                    <!--execution>
                         <id>gen-javadocs</id>
                         <phase>verify</phase>
+			   
                         <configuration>
                             <target>
                                 <ant dir="./component" antfile="build.xml" target="javadoc-no-compile" />
@@ -84,7 +85,7 @@
                         <goals>
                             <goal>run</goal>
                         </goals>
-                    </execution>
+                    </execution-->
                 </executions>
 
             </plugin>
