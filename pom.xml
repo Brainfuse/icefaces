@@ -64,13 +64,14 @@
 
     </distributionManagement>
 
-    <scm>
-        <connection>scm:svn:http://anonsvn.icesoft.org/repo/icefaces3/trunk/icefaces</connection>
-        <developerConnection>scm:svn:http://anonsvn.icesoft.org/repo/icefaces3/trunk/icefaces</developerConnection>
-        <url>http://anonsvn.icesoft.org/repo/icefaces3/</url>
-        <tag>HEAD</tag>
-    </scm>
+  <scm>
+		<url>https://github.com/Brainfuse/icefaces/</url>
+		<connection>scm:git:https://github.com/Brainfuse/icefaces</connection>
+		<developerConnection>scm:git:git@github.com:Brainfuse/icefaces.git</developerConnection>
 
+	  <tag>HEAD</tag>
+  </scm>
+    
     <modules>
         <module>core</module>
         <module>ace</module>
