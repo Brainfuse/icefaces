@@ -1204,7 +1204,7 @@ public class UISeriesBase extends HtmlDataTable implements SeriesStateHolder {
             // Visit as required on the *children* of the UIColumn
             // (facets have been done a single time with rowIndex=-1 already)
             if (getChildCount() > 0) {
-                int index = 0;
+                int index = getFirst();
                 for (UIComponent kid : getChildren()) {
                     if (!(kid instanceof UIColumn)) {
                         if (!EnvUtils.isPartialStateSaving(context.getFacesContext())) {
