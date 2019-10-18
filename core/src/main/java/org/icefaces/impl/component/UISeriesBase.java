@@ -1206,7 +1206,9 @@ public class UISeriesBase extends HtmlDataTable implements SeriesStateHolder {
                 int index = 0;
                 for (UIComponent kid : getChildren()) {
                     if (!(kid instanceof UIColumn)) {
-                        setRowIndex(index++);
+                        if (!EnvUtils.isPartialStateSaving(context.getFacesContext())) {
+                            setRowIndex(index++);
+                        }
                         if (kid.visitTree(context, callback)) {
                             return true;
                         }
@@ -1221,7 +1223,7 @@ public class UISeriesBase extends HtmlDataTable implements SeriesStateHolder {
                     }
                 }
             }
-
+            setRowIndex(-1);
             if (!visitRows) {
                 break;
             }
