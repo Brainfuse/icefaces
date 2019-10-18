@@ -46,6 +46,7 @@ import javax.faces.component.visit.VisitResult;
 import javax.faces.render.Renderer;
 import javax.faces.view.Location;
 import java.util.Collection;
+import org.icefaces.util.EnvUtils;
 
 
 /**
