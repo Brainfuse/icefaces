@@ -21,7 +21,7 @@
 
     <groupId>org.icefaces</groupId>
     <artifactId>bundle-parent</artifactId>
-    <version>3.4.3</version>
+    <version>3.4.4-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>ICEfaces</name>
     <description>ICEfaces Parent Project</description>
