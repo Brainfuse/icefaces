@@ -242,7 +242,7 @@ public class DOMPartialViewContext extends PartialViewContextWrapper {
                             DOMUtils.printNodeCDATA(op.element, outputWriter);
                             partialWriter.endInsert();
                         } else if (op instanceof DOMUtils.DeleteOperation) {
-                            if (!clientSideElementUpdateDetermination) {
+                            if (!clientSideElementUpdateDetermination && oldDOM != null) {
                                 generateElementUpdateNotifications(op, partialWriter, oldDOM);
                             }
                             partialWriter.delete(op.id);
@@ -255,7 +255,7 @@ public class DOMPartialViewContext extends PartialViewContextWrapper {
                             if (null == op.id) {
                                 updateId = getUpdateId((Element) op.element);
                             }
-                            if (!clientSideElementUpdateDetermination) {
+                            if (!clientSideElementUpdateDetermination && oldDOM != null) {
                                 generateElementUpdateNotifications(op, partialWriter, oldDOM);
                             }
                             partialWriter.startUpdate(updateId);
