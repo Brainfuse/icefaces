@@ -266,7 +266,7 @@ public class DOMPartialViewContext extends PartialViewContextWrapper {
                 }
 
                 //apply subtree changes to old DOM and then save it as the new DOM
-                if (documentOperations != null) {
+                if (documentOperations != null && oldDOM != null) {
                     for (DocumentOperation op: documentOperations) {
                         op.operateOn(oldDOM);
                     }
